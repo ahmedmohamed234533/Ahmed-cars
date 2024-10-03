@@ -1,0 +1,572 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Cairo", sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+}
+
+.navbar-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links a {
+    color: white;
+    padding: 0 15px;
+    text-decoration: none;
+
+}
+
+.navbar-links a:hover {
+    padding: 10px;
+    background-color: darkblue;
+    color: deeppink;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.search-container input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.search-container .search-btn {
+    background-color: #555;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.navbar-toggle {
+    display: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: black;
+    }
+
+    .navbar-links a {
+        padding: 10px;
+        border-top: 1px solid #444;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .search-container input {
+        padding: 5px 20px;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .search-container .search-btn {
+        background-color: #555;
+        border: none;
+        color: white;
+        padding: 5px 10px;
+        margin-left: 5px;
+        cursor: pointer;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero-section {
+    background-image: url('pexels-photo-977003.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    /* Optional: Adds a transparent layer for better text readability */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-text {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.hero-button {
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.hero-button:hover {
+    background-color: #ff4a4a;
+}
+
+@media (max-width: 768px) {
+    .hero-text {
+        font-size: 18px;
+    }
+
+    .hero-button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+h1 {
+    color: #000;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: calc(33.333% - 40px);
+    margin: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    cursor: pointer;
+    background-color: wheat;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card p {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.card button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.card button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.carder {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    min-width: 300px;
+    margin: 0 10px;
+    flex-shrink: 0;
+}
+
+.carder img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.carder p {
+    margin: 10px 0;
+}
+
+.carder button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.carder i {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.controls {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 0 5px;
+    font-size: 18px;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+    .carder {
+        min-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carder {
+        min-width: 150px;
+    }
+}
+
+/* Header with logo, paragraph, and button */
+.header {
+    text-align: center;
+    padding: 2em 0;
+}
+
+.logo {
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+}
+
+.intro {
+    font-size: 1.2em;
+    margin: 1em 0;
+}
+
+.cta-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.cta-btn i {
+    margin-left: 8px;
+}
+
+/* Card Slider */
+.slider {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2em 0;
+}
+
+.cardies {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 10px;
+}
+
+.cardies img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.cardies h3 {
+    margin-bottom: 0.5em;
+    font-size: 1.1em;
+}
+
+.cardies p {
+    font-size: 0.9em;
+    color: #333;
+}
+
+/* Slick Customization
+.slick-prev, .slick-next {
+    font-size: 2em;
+    color: #007BFF;
+}
+
+.slick-dots li button:before {
+    font-size: 12px;
+    color: #007BFF;
+} */
+
+@media (max-width: 768px) {
+    .slider {
+        width: 90%;
+    }
+
+    .cardies img {
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cta-btn {
+        font-size: 0.9em;
+    }
+}
+
+.slider {
+    position: relative;
+    max-width: 2000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+img {
+    width:100%;
+    height: auto;
+}
+
+.but {
+    margin-top: 10px;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+h5 {
+    color: #000;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.gallery-item button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.gallery-item button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+}
+/* Basic Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Logo Styling */
+.footer-logo img {
+    width: 60px;
+    height: 60px;
+    border-radius:50%;
+}
+
+/* Paragraph Styling with Car Icon */
+.footer-content {
+    flex: 1 1 300px;
+    max-width: 600px;
+    margin: 0 20px;
+}
+
+.footer-content i {
+    margin-right: 10px;
+}
+
+/* Social Media Icons Styling */
+.footer-icons .social-icon {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.footer-icons .social-icon:hover {
+    color: #ff4081; /* Hover color for icons */
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-logo img {
+        margin-bottom: 10px;
+    }
+}
